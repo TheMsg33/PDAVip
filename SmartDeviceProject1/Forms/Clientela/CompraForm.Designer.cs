@@ -35,9 +35,9 @@
             this.dataGrid1 = new System.Windows.Forms.DataGrid();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // imageList1
@@ -76,14 +76,6 @@
             this.button2.TabIndex = 82;
             this.button2.Text = "Editar";
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(84, 271);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(72, 20);
-            this.button3.TabIndex = 81;
-            this.button3.Text = "Voltar";
-            // 
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(6, 245);
@@ -92,13 +84,19 @@
             this.button4.TabIndex = 84;
             this.button4.Text = "Apagar";
             // 
-            // button5
+            // label1
             // 
-            this.button5.Location = new System.Drawing.Point(6, 271);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(72, 20);
-            this.button5.TabIndex = 83;
-            this.button5.Text = "Voltar";
+            this.label1.Location = new System.Drawing.Point(2, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(102, 20);
+            this.label1.Text = "Cod. barras /  Qtt";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(110, 5);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(129, 21);
+            this.textBox1.TabIndex = 86;
             // 
             // CompraForm
             // 
@@ -107,15 +105,16 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(127)))), ((int)(((byte)(26)))));
             this.ClientSize = new System.Drawing.Size(240, 294);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGrid1);
             this.Controls.Add(this.button10);
             this.Name = "CompraForm";
             this.Text = "CompraForm";
+            this.Load += new System.EventHandler(this.CompraForm_Load);
             this.ResumeLayout(false);
 
         }
@@ -127,9 +126,9 @@
         private System.Windows.Forms.DataGrid dataGrid1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
 
     }
 }

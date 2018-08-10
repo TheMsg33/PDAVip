@@ -13,8 +13,6 @@ namespace SmartDeviceProject1.Class
         public int preço { get; set; }
         public string barcode;
 
-
-
         public ProdutoCompra(String refe, int qtd, String design, int preço, String barcode)
         {
             this.refe = refe;
